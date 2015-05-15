@@ -69,7 +69,7 @@ class PasswordBroker implements PasswordBrokerContract {
 	 *
 	 * @param  array  $credentials
 	 * @param  \Closure|null  $callback
-     * @param  string  $queue
+	 * @param  string  $queue
 	 * @return string
 	 */
 	public function sendResetLink(array $credentials, Closure $callback = null, $queue = null)
@@ -100,7 +100,7 @@ class PasswordBroker implements PasswordBrokerContract {
 	 * @param  \Illuminate\Contracts\Auth\CanResetPassword  $user
 	 * @param  string  $token
 	 * @param  \Closure|null  $callback
-     * @param  string  $queue
+	 * @param  string  $queue
 	 * @return int
 	 */
 	public function emailResetLink(CanResetPasswordContract $user, $token, Closure $callback = null, $queue = null)

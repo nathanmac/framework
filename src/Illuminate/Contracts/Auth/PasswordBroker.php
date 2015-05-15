@@ -44,7 +44,7 @@ interface PasswordBroker {
 	 *
 	 * @param  array  $credentials
 	 * @param  \Closure|null  $callback
-     * @param  string  $queue
+	 * @param  string  $queue
 	 * @return string
 	 */
 	public function sendResetLink(array $credentials, Closure $callback = null, $queue = null);
